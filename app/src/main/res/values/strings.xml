@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AutodocTest</string>
+    <string name="searchHint">Введите название</string>
+    <string name="updated_at">Обновлено:\n %1$s</string>
+    <string name="following_title">Подписки /</string>
+    <string name="followers_title">Подписчики</string>
+    <string name="twitter_username">Twitter: %1$s</string>
+    <string name="email">Почта: %1$s</string>
+    <string name="blog">Сайт: %1$s</string>
+    <string name="followers">Подписчики\n %1$s</string>
+    <string name="following">Подписки / \n %1$s</string>
+</resources>

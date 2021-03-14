@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/repositoriesFragment">
+
+    <fragment
+        android:id="@+id/repositoriesFragment"
+        android:name="com.skorik05.autodoctest.presentation.fragments.RepositoriesFragment"
+        android:label="SearchFragment"
+        tools:layout="@layout/fragment_repositories"
+        >
+        <action
+            android:id="@+id/actionOpenUserPage"
+            app:destination="@id/userFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="com.skorik05.autodoctest.presentation.fragments.UserFragment"
+        android:label="UserFragment"
+        tools:layout="@layout/fragment_user"
+        >
+        <argument
+            android:name="userUrl"
+            app:argType="string"
+            android:defaultValue="" />
+        <action
+            android:id="@+id/actionCloseUserPage"
+            app:destination="@id/repositoriesFragment" />
+    </fragment>
+</navigation>
